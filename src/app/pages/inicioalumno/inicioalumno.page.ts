@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicioalumno',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioalumnoPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
-}
+  escaner(){
+    this.router.navigate(['escaner']);
+  } 
+
+  asignaturas(){
+    this.router.navigate(['asignaturas']);
+  } 
+
+  restablecerpass(){
+    this.router.navigate(['restablecerpass']);
+  } 
+} 
+

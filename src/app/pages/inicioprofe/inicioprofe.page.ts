@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicioprofe',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioprofePage implements OnInit {
 
-  constructor() { }
+
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  secciones(){
+    this.router.navigate(['secciones']);
+  } 
+
+  restablecerpass(){
+    this.router.navigate(['restablecerpass']);
+  } 
 }

@@ -59,6 +59,42 @@ const routes: Routes = [
     path: 'lista',
     loadChildren: () => import('./pages/lista/lista.module').then( m => m.ListaPageModule)
   },
+  {
+    path: 'codigopass',
+    loadChildren: () => import('./pages/codigopass/codigopass.module').then( m => m.CodigopassPageModule)
+  },
+  {
+    path: 'escaner',
+    loadChildren: () => import('./pages/escaner/escaner.module').then( m => m.EscanerPageModule)
+  },
+  {
+    path: 'services',
+    loadChildren: () => import('./services/services.module').then( m => m.ServicesPageModule)
+  },
+  {
+    path: 'seccion1',
+    loadChildren: () => import('./pages/seccion1/seccion1.module').then( m => m.Seccion1PageModule)
+  },
+  {
+    path: 'seccion2',
+    loadChildren: () => import('./pages/seccion2/seccion2.module').then( m => m.Seccion2PageModule)
+  },
+  {
+    path: 'seccion3',
+    loadChildren: () => import('./pages/seccion3/seccion3.module').then( m => m.Seccion3PageModule)
+  },
+  {
+    path: 'bd',
+    loadChildren: () => import('./pages/bd/bd.module').then( m => m.BdPageModule)
+  },
+  {
+    path: 'ingles',
+    loadChildren: () => import('./pages/ingles/ingles.module').then( m => m.InglesPageModule)
+  },
+  {
+    path: 'mate',
+    loadChildren: () => import('./pages/mate/mate.module').then( m => m.MatePageModule)
+  },
 ];
 
 @NgModule({

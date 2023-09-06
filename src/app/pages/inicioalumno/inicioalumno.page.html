@@ -1,16 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons>
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <ion-title>inicioalumno</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">inicioalumno</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Bienvenido Alumno</ion-card-title>
+    <ion-card-subtitle>Nombre: </ion-card-subtitle>
+    <ion-card-subtitle>Correo: </ion-card-subtitle>
+    <h4 class="centrado" (click)="restablecerpass()">Restablecer Contraseña</h4>
+  </ion-card-header>
+<hr>
+<hr>
+<hr>
+  <ion-card-content>
+    <ion-button (click)="escaner()" size="full">Escanea tu Codigo QR</ion-button>
+    <h1>Estado De Asistencia</h1>
+    <ion-button (click)="asignaturas()" size="full">Asignaturas</ion-button>
+  </ion-card-content>
+</ion-card>

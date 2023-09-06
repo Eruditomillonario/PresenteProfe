@@ -1,16 +1,18 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons>
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <ion-title>inicioprofe</ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">inicioprofe</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+  <ion-card>
+    <ion-card-header>
+      <hr>
+      <hr>
+      <hr>
+      <ion-card-title>Bienvenido Profesor</ion-card-title>
+      <ion-card-subtitle>Nombre: </ion-card-subtitle>
+      <ion-card-subtitle>Correo: </ion-card-subtitle>
+      <h4 class="centrado" (click)="restablecerpass()">Restablecer Contraseña</h4>
+
+    </ion-card-header>
+  
+    <ion-card-content>
+      <h1>Todas las Secciones</h1>
+      <ion-button (click)="secciones()" size="full">Mostrar Secciones</ion-button>
+    </ion-card-content> 
+  </ion-card>
